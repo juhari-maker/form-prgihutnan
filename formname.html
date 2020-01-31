@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+<form>
+    <h1>HTML Forms</h1>
+    <label>First name :</label>
+    <br>
+    <input type="text" name="firstname" id="firstname" value ="" placeholder="masukkan nama depan">
+    <br><br>
+    <label>Last name :</label>
+    <br>
+    <input type="text" name="lastname" id="lastname" value="" placeholder="masukkan nama belakang">
+    <br><br>
+    <input type="button" onclick="tampilNama()" value="Tampilkan Nama">
+</form>
+
+
+<p id="hasil"></p>
+
+<script>
+    function tampilNama() {
+        var namaDepan = document.getElementById("firstname").value;
+        var namaBelakang = document.getElementById("lastname").value;
+        document.getElementById("hasil").innerHTML = namaDepan + namaBelakang;
+    }
+
+</script>
+
+</body>
+
+</html>
